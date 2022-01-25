@@ -1,0 +1,14 @@
+﻿  Проверка исходных файлов
+  Удаленное копирование исходных файлов в "192.168.79.128"
+  Проверка архитектуры
+  Проверка архитектуры
+  Запуск удаленной сборки.
+  Компиляция исходных файлов:
+  main.cpp
+C:\CPP\Modul 20.11\Server\Server\main.cpp(81,20): warning : character constant too long for its type
+C:\CPP\Modul 20.11\Server\Server\main.cpp(81,20): warning :    81 |         message == 'привет';
+C:\CPP\Modul 20.11\Server\Server\main.cpp(81,20): warning :       |                    ^~~~~~~~~~~~~~
+C:\CPP\Modul 20.11\Server\Server\main.cpp(81,20): error : ISO C++ forbids comparison between pointer and integer [-fpermissive]
+C:\CPP\Modul 20.11\Server\Server\main.cpp(81,17): warning : statement has no effect [-Wunused-value]
+C:\CPP\Modul 20.11\Server\Server\main.cpp(81,17): warning :    81 |         message == 'привет';
+C:\CPP\Modul 20.11\Server\Server\main.cpp(81,17): warning :       |         ~~~~~~~~^~~~~~~~~~~~~~~~~
