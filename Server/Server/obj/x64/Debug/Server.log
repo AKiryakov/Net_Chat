@@ -1,14 +1,21 @@
 ﻿  Проверка исходных файлов
-  Удаленное копирование исходных файлов в "192.168.79.128"
+  Удаленное копирование исходных файлов в "192.168.68.128"
   Проверка архитектуры
   Проверка архитектуры
   Запуск удаленной сборки.
   Компиляция исходных файлов:
   main.cpp
-C:\CPP\Modul 20.11\Server\Server\main.cpp(81,20): warning : character constant too long for its type
-C:\CPP\Modul 20.11\Server\Server\main.cpp(81,20): warning :    81 |         message == 'привет';
-C:\CPP\Modul 20.11\Server\Server\main.cpp(81,20): warning :       |                    ^~~~~~~~~~~~~~
-C:\CPP\Modul 20.11\Server\Server\main.cpp(81,20): error : ISO C++ forbids comparison between pointer and integer [-fpermissive]
-C:\CPP\Modul 20.11\Server\Server\main.cpp(81,17): warning : statement has no effect [-Wunused-value]
-C:\CPP\Modul 20.11\Server\Server\main.cpp(81,17): warning :    81 |         message == 'привет';
-C:\CPP\Modul 20.11\Server\Server\main.cpp(81,17): warning :       |         ~~~~~~~~^~~~~~~~~~~~~~~~~
+C:\CPP\Modul 20.11\Net_Chat\Server\Server\main.cpp(87,19): warning : unused variable ‘bytes1’ [-Wunused-variable]
+C:\CPP\Modul 20.11\Net_Chat\Server\Server\main.cpp(87,19): warning :    87 |           ssize_t bytes1 = write(connection, message, sizeof(message));
+C:\CPP\Modul 20.11\Net_Chat\Server\Server\main.cpp(87,19): warning :       |                   ^~~~~~
+C:\CPP\Modul 20.11\Net_Chat\Server\Server\main.cpp(104,19): warning : unused variable ‘bytes2’ [-Wunused-variable]
+C:\CPP\Modul 20.11\Net_Chat\Server\Server\main.cpp(104,19): warning :   104 |           ssize_t bytes2 = write(connection, message, sizeof(message));
+C:\CPP\Modul 20.11\Net_Chat\Server\Server\main.cpp(104,19): warning :       |                   ^~~~~~
+C:\CPP\Modul 20.11\Net_Chat\Server\Server\main.cpp(118,19): warning : unused variable ‘bytes3’ [-Wunused-variable]
+C:\CPP\Modul 20.11\Net_Chat\Server\Server\main.cpp(118,19): warning :   118 |           ssize_t bytes3 = write(connection, message, sizeof(message));
+C:\CPP\Modul 20.11\Net_Chat\Server\Server\main.cpp(118,19): warning :       |                   ^~~~~~
+C:\CPP\Modul 20.11\Net_Chat\Server\Server\main.cpp(133,19): warning : unused variable ‘bytes4’ [-Wunused-variable]
+C:\CPP\Modul 20.11\Net_Chat\Server\Server\main.cpp(133,19): warning :   133 |           ssize_t bytes4 = write(connection, message, sizeof(message));
+C:\CPP\Modul 20.11\Net_Chat\Server\Server\main.cpp(133,19): warning :       |                   ^~~~~~
+  Связывание объектов
+  Server.vcxproj -> C:\CPP\Modul 20.11\Net_Chat\Server\Server\bin\x64\Debug\Server.out

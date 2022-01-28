@@ -33,38 +33,24 @@ int main() {
         exit(1);
     }
     // Взаимодействие с сервером
-    while (1) {
+    cout << "Для начала работы программы отправьте любое сообщение на сервер" << endl;
+    while (1)
+    {
+  
         bzero(message, sizeof(message));
-        cout << "Введите сообщение для отправки на сервер:" << endl;
         cin >> message;
-// начало работы программы
-
-
-
-
-
-
-        if ((strncmp(message, "end", 3)) == 0)
-        {
-            write(socket_file_descriptor, message, sizeof(message));
-            cout << "Клиент вышел." << endl;
-            break;
-        }
+        cout << "write 1" << endl;
         ssize_t bytes = write(socket_file_descriptor, message, sizeof(message));
-        // Если передали >= 0  байт, значит пересылка прошла успешно
-        if (bytes >= 0)
-        {
-            cout << "Данные успешно отправлены на сервер.!" << endl;
-// после первого сообщения
-
-
-
-
+        if (bytes >= 0) {
+            cout << "Данные отправлены на сервер" << endl;
         }
-        bzero(message, sizeof(message));
-        // Ждем ответа от сервера
-        read(socket_file_descriptor, message, sizeof(message));
-        cout << "Данные, полученные с сервера: " << message << endl;
+        cout << "write 2" << endl;
+
+       bzero(message, sizeof(message));
+       cout << "read 1" << endl;
+       read(socket_file_descriptor, message, sizeof(message));
+       cout << "read 2" << endl;
+       cout << message << endl;
     }
     // закрываем сокет, завершаем соединение
     close(socket_file_descriptor);
