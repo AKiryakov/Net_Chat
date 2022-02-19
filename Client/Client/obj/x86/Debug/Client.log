@@ -1,0 +1,13 @@
+﻿  Проверка исходных файлов
+  Удаленное копирование исходных файлов в "192.168.68.128"
+  Проверка архитектуры
+  Проверка архитектуры
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Application Type\Linux\1.0\Linux.targets(202,5): warning : Текущая архитектура проекта "x86" не совместима с архитектурой удаленной системы "x64" ("x64"). Переключите архитектуру проекта на "x64" в Configuration Manager. Если используется перекрестная компиляция, это предупреждение можно игнорировать.
+  Запуск удаленной сборки.
+  Компиляция исходных файлов:
+  main.cpp
+C:\CPP\Modul 20.11\Net_Chat\Client\Client\main.cpp(64,16): warning : unused variable ‘bytes1’ [-Wunused-variable]
+C:\CPP\Modul 20.11\Net_Chat\Client\Client\main.cpp(64,16): warning :    64 |        ssize_t bytes1 = write(socket_file_descriptor, message, sizeof(message));
+C:\CPP\Modul 20.11\Net_Chat\Client\Client\main.cpp(64,16): warning :       |                ^~~~~~
+  Связывание объектов
+  Client.vcxproj -> C:\CPP\Modul 20.11\Net_Chat\Client\Client\bin\x86\Debug\Client.out
